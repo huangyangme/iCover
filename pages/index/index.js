@@ -50,11 +50,13 @@ Page({
     // 使用 wx.createContext 获取绘图上下文 context
     let context = wx.createCanvasContext('coverCanvas')
     let iphoneXImg = '/assets/iPhone_X_cover.png'
+    let screen = '/assets/screen.png'
 
-    context.setFillStyle('#cccccc')
-    context.fillRect(0, 0, 500, 1000)
+    // context.setFillStyle('#cccccc')
+    // context.fillRect(0, 0, 250, 500)
     
-    context.drawImage(iphoneXImg, 0, 0, 500, 1000)
+    context.drawImage(screen, 16, 15, 218, 471, 16, 15, 218, 471)
+    context.drawImage(iphoneXImg, 0, 0, 250, 500)
 
     // context.setStrokeStyle("#00ff00")
     // context.setLineWidth(5)
@@ -78,10 +80,13 @@ Page({
     let context = wx.createCanvasContext('coverCanvas')
     wx.chooseImage({
       success: function (res) {
-        context.drawImage(res.tempFilePaths[0], 0, 0, 150, 100)
+        let iphoneXImg = '/assets/iPhone_X_cover.png'
+        context.drawImage(res.tempFilePaths[0], 16, 15, 218, 471, 16, 15, 218, 471)
+        context.drawImage(iphoneXImg, 0, 0, 250, 500)
         context.draw()
       }
     })
+
   },
 
   getUserInfo: function(e) {

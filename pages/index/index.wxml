@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <canvas style="width: 500rpx; height: 1000rpx;" canvas-id="coverCanvas"></canvas>
-
+  <canvas style="width: 250px; height: 500px;" canvas-id="coverCanvas"></canvas>
   <button bindtap="onChooseImage">选择图片</button>
 </view>
