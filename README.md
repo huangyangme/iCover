@@ -6,3 +6,4 @@ https://developer.apple.com/ios/human-interface-guidelines/visual-design/adaptiv
 https://developer.apple.com/ios/human-interface-guidelines/overview/iphone-x/
 
 https://www.thehotskills.com/iphone-x-mockup-psd/
+
